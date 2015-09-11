@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>title</title>
+		<script type="text/javascript" src="./js/FG-0.0.1.min.js"></script>
+		<style>
+			body {
+				font-size: 15px;
+				color: green;
+				font-family: '黑体';
+			}
+			input {
+				width: 150px;
+				height: 20px;
+				border: 1px solid #99D3F5;
+				border-radius: 4px;
+			}
+			.ipbutton {
+				width: 150px;
+				height: 25px;
+				background: #D0EEFF;
+				border: 1px solid #99D3F5;
+				border-radius: 4px;
+				color: #0D4A09;
+				margin-top: 10px;
+			}
+			.title {
+				font-weight: bolder;
+				color: #D23434;
+			}
+			.contentcls{
+				font-size: 15px;
+				color: #0E14D2;
+			}
+		</style>
+	</head>
+	<body>
+		<br/>
+		<div style="width: 100%; text-align: left"><a href="./index.html">返回玩设备</a></div>
+		<br/><span class="title">用户管理</span>
+		<br/>
+		<input class="ipbutton" type="button" onclick="usersEmail_verification_code()" value="获取验证码"/>
+		<input class="ipbutton" type="button" onclick="users()" value="注册"/>
+		<input class="ipbutton" type="button" onclick="login()" value="登录"/>
+		<input class="ipbutton" type="button" onclick="usersTokens()" value="用户各种信息"/>
+		<br/>
+		<br/><span class="title">设备管理</span>
+		<br/>
+		<input class="ipbutton" type="button" onclick="getDeviceList()" value="获取设备列表"/>
+		<input class="ipbutton" type="button" onclick="devicesModify()" value="修改设备名称"/>
+		<input class="ipbutton" type="button" onclick="usersDeviceUnbind()" value="解绑我的设备"/>
+		<br/>
+		<br/><span class="title">授权管理</span>
+		<br/>
+		<input class="ipbutton" type="button" onclick="authorizationDevices()" value="查询可以授权的设备"/>
+		<input class="ipbutton" type="button" onclick="authorizationDevicesManage()" value="授权设备给别人"/>
+		<input class="ipbutton" type="button" onclick="devicesUsers()" value="设备的用户"/>
+		<input class="ipbutton" type="button" onclick="devicesUsersDelete()" value="设备解绑某个用户"/>
+		<br/>
+		<br/>
+		<span class="title">[日志展示]</span>
+		<br/>
+		<p class="contentcls" id="content">将展示后台返回的信息</p>
+	</body>
+	<script type="text/javascript">
+	
+		var contentid = document.getElementById("content");
+		
+		var userToken = "";
+		var userID = "";
+		var appid = "0edfd64c-0f9a-4472-a8bc-b06b75c3909a";
+		var appSecret = "63b9c58fe0bd9fa397c205bdd4eb6db1";
+		FG.init(appid, appSecret);
+
+		/**
+		 *获取验证码
+		 */
+		function usersEmail_verification_code() {
+			var par = {
+				"username" : "xuyx@mxchip.com"
+			};
+			FG.usersEmail_verification_code(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 *注册
+		 * 返回：{"token":""}
+		 */
+		function users() {
+			var par = {
+				"username" : "xuyx@mxchip.com",
+				"password" : "123456",
+				"verification_code" : "303028"
+			};
+			FG.users(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 *登录
+		 *
+		 *返回{
+			 user_token: "",
+			 user_id: ""
+		 	}
+		 */
+		function login() {
+			var par = {
+				// "username" : "13524467545",
+				"username" : "xuyx@mxchip.com",
+				"password" : "123456"
+			};
+			
+			FG.login(par).then(function(ret) {
+				console.log("success");
+				console.log(ret);
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+				contentid.innerHTML = JSON.stringify(err);
+			});
+		}
+
+		/**
+		 *获取用户各种信息
+		 * 返回：
+			 {
+				 "user_id": "",
+				 "username": "",
+				 "token_id": "",
+				 "resource_type": "user",
+				 "role": "owner",
+				 "resource_id": "",
+				 "created": "2015-09-11 13:00:10"
+			 }
+		 */
+		function usersTokens() {
+			FG.usersTokens().then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 *获取设备列表
+		 */
+		function getDeviceList() {
+			FG.devicesGet().then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 *修改设备名称
+		 * 返回：{"result":"success"}
+		 */
+		function devicesModify() {
+			var par = {
+				"device_id" : "d64f517c/c8934691813c",
+				"alias" : "把你改成"
+			};
+			FG.devicesModify(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 * 解绑我的设备
+		 */
+		function usersDeviceUnbind() {
+			var par = {
+				"device_id" : "d64f517c/c8934691813c"
+			};
+			FG.usersDeviceUnbind(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 *查询可以授权的设备
+		 *返回{
+				 "id": "",
+				 "serial": null,
+				 "bssid": "",
+				 "created": "2015-09-11 10:55:16",
+				 "alias": "啦啦啦设备",
+				 "online": "1",
+				 "power_time": null,
+				 "ip": "101.0.00.00:47674",
+				 "ssid": null,
+				 "online_time": "2015-09-11 10:55:16",
+				 "offline_time": "2015-09-11 10:54:40"
+		 	}
+		 */
+		function authorizationDevices() {
+			FG.authorizationDevices().then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+
+		/**
+		 *授权设备给别人
+		 * 返回：{"result":""}
+		 */
+		function authorizationDevicesManage() {
+			var par = {
+				"username" : "micoapp@qq.com",
+				"owner_type" : "share",
+				"device_id" : "d64f517c/c8934691813c"
+			};
+			FG.authorizationDevicesManage(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+		
+		/**
+		 *看看设备有哪些用户 
+		 * 返回[
+				  {
+				    "user_id": "4db835d4-ae95-429e-b3d6-30503735a3f5",
+				    "username": "xuyx@mxchip.com",
+				    "role": "owner"
+				  }
+				]
+		 */
+		function devicesUsers() {
+			var par = {
+				"device_id" : "d64f517c/c8934691813c",
+				"product_id" : "d64f517c",
+				"MAC" : "c8934691813c"
+			};
+			FG.devicesUsers(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+		
+		function devicesUsersDelete(){
+			var par = {
+				"device_id" : "d64f517c/c8934691813c",
+				"user_id" :  "b2a4e109-d3fa-42b6-b9ea-2f83ca4a5662"
+			};
+			FG.devicesUsersDelete(par).then(function(ret) {
+				console.log("success");
+				console.log(JSON.stringify(ret));
+				contentid.innerHTML = JSON.stringify(ret);
+			}, function(err) {
+				console.log("err");
+				console.log(err);
+			});
+		}
+	</script>
+</html>
