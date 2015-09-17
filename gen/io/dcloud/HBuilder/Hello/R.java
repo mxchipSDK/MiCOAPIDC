@@ -113,20 +113,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int titleButtonTextColor=0x7f01000b;
     }
     public static final class color {
-        public static final int image_pick_title_btn_normal=0x7f080001;
-        public static final int image_pick_title_btn_pressed=0x7f080000;
-        public static final int ime_background=0x7f080002;
-    }
-    public static final class dimen {
-        /**  Default screen margins, per the Android Design guidelines. 
-
-         Example customization of dimensions originally defined in res/values/dimens.xml
-         (such as screen margins) for screens with more than 820dp of available width. This
-         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
-    
-         */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int image_pick_title_btn_normal=0x7f060001;
+        public static final int image_pick_title_btn_pressed=0x7f060000;
+        public static final int ime_background=0x7f060002;
     }
     public static final class drawable {
         public static final int actionsheet_bottom_normal=0x7f020000;
@@ -142,217 +131,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int as_other_bt_bg=0x7f02000a;
         public static final int dcloud_dialog_shape=0x7f02000b;
         public static final int dcloud_dialog_shape_bg=0x7f02000c;
-        public static final int ic_launcher=0x7f02000d;
-        public static final int icon=0x7f02000e;
-        public static final int image_pick_mask=0x7f02000f;
-        public static final int image_pick_no_media=0x7f020010;
-        public static final int image_pick_title_sel=0x7f020011;
-        public static final int push=0x7f020012;
-        public static final int slt_as_ios7_cancel_bt=0x7f020013;
-        public static final int slt_as_ios7_other_bt_bottom=0x7f020014;
-        public static final int slt_as_ios7_other_bt_middle=0x7f020015;
-        public static final int slt_as_ios7_other_bt_single=0x7f020016;
-        public static final int slt_as_ios7_other_bt_title=0x7f020017;
-        public static final int slt_as_ios7_other_bt_top=0x7f020018;
-        public static final int snow_black=0x7f020019;
-        public static final int snow_black_progress=0x7f02001a;
-        public static final int snow_white=0x7f02001b;
-        public static final int snow_white_progress=0x7f02001c;
-        public static final int splash=0x7f02001d;
-        public static final int stream=0x7f02001e;
-        public static final int stream_running=0x7f02001f;
-        public static final int stream_running_progress=0x7f020020;
-        public static final int streamapp_icon_appdefault=0x7f020021;
-        public static final int streamapp_icon_storeup=0x7f020022;
-        public static final int streamapp_icon_unstoreup=0x7f020023;
+        public static final int icon=0x7f02000d;
+        public static final int image_pick_mask=0x7f02000e;
+        public static final int image_pick_no_media=0x7f02000f;
+        public static final int image_pick_title_sel=0x7f020010;
+        public static final int push=0x7f020011;
+        public static final int slt_as_ios7_cancel_bt=0x7f020012;
+        public static final int slt_as_ios7_other_bt_bottom=0x7f020013;
+        public static final int slt_as_ios7_other_bt_middle=0x7f020014;
+        public static final int slt_as_ios7_other_bt_single=0x7f020015;
+        public static final int slt_as_ios7_other_bt_title=0x7f020016;
+        public static final int slt_as_ios7_other_bt_top=0x7f020017;
+        public static final int snow_black=0x7f020018;
+        public static final int snow_black_progress=0x7f020019;
+        public static final int snow_white=0x7f02001a;
+        public static final int snow_white_progress=0x7f02001b;
+        public static final int splash=0x7f02001c;
+        public static final int stream=0x7f02001d;
+        public static final int stream_running=0x7f02001e;
+        public static final int stream_running_progress=0x7f02001f;
+        public static final int streamapp_icon_appdefault=0x7f020020;
+        public static final int streamapp_icon_storeup=0x7f020021;
+        public static final int streamapp_icon_unstoreup=0x7f020022;
     }
     public static final class id {
-        public static final int StreamApp_ListItem=0x7f0a006e;
-        public static final int StreamApp_List_Leftpart=0x7f0a006d;
-        public static final int StreamApp_List_StoreUp=0x7f0a006f;
-        public static final int StreamApp_List_StoreUpIcon=0x7f0a0073;
-        public static final int StreamApp_List_appIcon=0x7f0a0070;
-        public static final int StreamApp_List_appSummary=0x7f0a0072;
-        public static final int StreamApp_List_appTitle=0x7f0a0071;
-        public static final int Streamapp_List_Divider=0x7f0a0074;
-        public static final int action_settings=0x7f0a0075;
-        public static final int app_logo=0x7f0a001c;
-        public static final int app_logo_province=0x7f0a001d;
-        public static final int app_name=0x7f0a001e;
-        public static final int app_name_title=0x7f0a001b;
-        public static final int app_need_size=0x7f0a0021;
-        public static final int app_progress=0x7f0a0022;
-        public static final int app_size=0x7f0a0020;
-        public static final int app_version=0x7f0a001f;
-        public static final int back=0x7f0a0002;
-        public static final int click_down=0x7f0a002e;
-        public static final int click_down_img=0x7f0a002f;
-        public static final int click_upload=0x7f0a0023;
-        public static final int close=0x7f0a004a;
-        public static final int container=0x7f0a0000;
-        public static final int dcloud_dialog_btn1=0x7f0a0011;
-        public static final int dcloud_dialog_btn2=0x7f0a0012;
-        public static final int dcloud_dialog_icon=0x7f0a000e;
-        public static final int dcloud_dialog_msg=0x7f0a0010;
-        public static final int dcloud_dialog_rootview=0x7f0a000d;
-        public static final int dcloud_dialog_title=0x7f0a000f;
-        public static final int delete=0x7f0a004e;
-        public static final int down_click_linearLayout=0x7f0a0029;
-        public static final int downlaod_progress_horizontal=0x7f0a0065;
-        public static final int download_app_name=0x7f0a0063;
-        public static final int download_app_version=0x7f0a0064;
-        public static final int download_icon=0x7f0a0008;
-        public static final int download_layout=0x7f0a005f;
-        public static final int download_name=0x7f0a0009;
-        public static final int frmQueue=0x7f0a0017;
-        public static final int gridGallery=0x7f0a0015;
-        public static final int imgNoMedia=0x7f0a0016;
-        public static final int imgQueue=0x7f0a0018;
-        public static final int imgQueueMask=0x7f0a0019;
-        public static final int logs=0x7f0a004f;
-        public static final int m_background=0x7f0a001a;
-        public static final int manage_app=0x7f0a002b;
-        public static final int maybe=0x7f0a0030;
-        public static final int maybe_list=0x7f0a0031;
-        public static final int next_time=0x7f0a002d;
-        public static final int notification_background=0x7f0a0051;
-        public static final int notification_diffsize=0x7f0a005c;
-        public static final int notification_fullsize=0x7f0a005b;
-        public static final int notification_icon=0x7f0a0053;
-        public static final int notification_layout=0x7f0a0052;
-        public static final int notification_name=0x7f0a0055;
-        public static final int notification_right=0x7f0a0056;
-        public static final int notification_right_left=0x7f0a0057;
-        public static final int notification_right_top_left=0x7f0a0058;
-        public static final int notification_right_under_left=0x7f0a005a;
-        public static final int notification_title=0x7f0a0054;
-        public static final int notification_update_icon=0x7f0a005d;
-        public static final int notification_update_text=0x7f0a005e;
-        public static final int notification_version=0x7f0a0059;
-        public static final int other_operation=0x7f0a002a;
-        public static final int pager=0x7f0a0003;
-        public static final int progressBar=0x7f0a006c;
-        public static final int query_page=0x7f0a004d;
-        public static final int rec_install1=0x7f0a0034;
-        public static final int rec_install2=0x7f0a003a;
-        public static final int rec_install3=0x7f0a0040;
-        public static final int rec_install4=0x7f0a0046;
-        public static final int recommend1=0x7f0a0037;
-        public static final int recommend2=0x7f0a003d;
-        public static final int recommend3=0x7f0a0043;
-        public static final int recommend4=0x7f0a0049;
-        public static final int recommend_lin1=0x7f0a0032;
-        public static final int recommend_lin2=0x7f0a0038;
-        public static final int recommend_lin3=0x7f0a003e;
-        public static final int recommend_lin4=0x7f0a0044;
-        public static final int recommend_logo1=0x7f0a0033;
-        public static final int recommend_logo2=0x7f0a0039;
-        public static final int recommend_logo3=0x7f0a003f;
-        public static final int recommend_logo4=0x7f0a0045;
-        public static final int recommend_pro1=0x7f0a0035;
-        public static final int recommend_pro2=0x7f0a003b;
-        public static final int recommend_pro3=0x7f0a0041;
-        public static final int recommend_pro4=0x7f0a0047;
-        public static final int set_priority=0x7f0a004c;
-        public static final int setup_app_name=0x7f0a0067;
-        public static final int setup_app_version=0x7f0a0068;
-        public static final int setup_icon=0x7f0a006a;
-        public static final int setup_layout=0x7f0a0066;
-        public static final int setup_message=0x7f0a0069;
-        public static final int setup_text=0x7f0a006b;
-        public static final int start_manage=0x7f0a004b;
-        public static final int status=0x7f0a0060;
-        public static final int status1=0x7f0a0036;
-        public static final int status2=0x7f0a003c;
-        public static final int status3=0x7f0a0042;
-        public static final int status4=0x7f0a0048;
-        public static final int status_img=0x7f0a0061;
-        public static final int status_txt=0x7f0a0062;
-        public static final int tab0=0x7f0a0004;
-        public static final int tab1=0x7f0a0005;
-        public static final int tab2=0x7f0a0006;
-        public static final int tab3=0x7f0a0007;
-        public static final int text=0x7f0a0050;
-        public static final int title=0x7f0a0001;
-        public static final int titleBtn=0x7f0a0014;
-        public static final int tvTitleText=0x7f0a0013;
-        public static final int update=0x7f0a0025;
-        public static final int update_msg=0x7f0a0026;
-        public static final int update_msg1=0x7f0a0027;
-        public static final int update_msg2=0x7f0a0028;
-        public static final int update_notification_progressbar=0x7f0a000c;
-        public static final int update_notification_progressblock=0x7f0a000b;
-        public static final int update_notification_progresstext=0x7f0a000a;
-        public static final int upload_status=0x7f0a0024;
-        public static final int wifi_download=0x7f0a002c;
+        public static final int StreamApp_ListItem=0x7f08006d;
+        public static final int StreamApp_List_Leftpart=0x7f08006c;
+        public static final int StreamApp_List_StoreUp=0x7f08006e;
+        public static final int StreamApp_List_StoreUpIcon=0x7f080072;
+        public static final int StreamApp_List_appIcon=0x7f08006f;
+        public static final int StreamApp_List_appSummary=0x7f080071;
+        public static final int StreamApp_List_appTitle=0x7f080070;
+        public static final int Streamapp_List_Divider=0x7f080073;
+        public static final int app_logo=0x7f08001b;
+        public static final int app_logo_province=0x7f08001c;
+        public static final int app_name=0x7f08001d;
+        public static final int app_name_title=0x7f08001a;
+        public static final int app_need_size=0x7f080020;
+        public static final int app_progress=0x7f080021;
+        public static final int app_size=0x7f08001f;
+        public static final int app_version=0x7f08001e;
+        public static final int back=0x7f080001;
+        public static final int click_down=0x7f08002d;
+        public static final int click_down_img=0x7f08002e;
+        public static final int click_upload=0x7f080022;
+        public static final int close=0x7f080049;
+        public static final int dcloud_dialog_btn1=0x7f080010;
+        public static final int dcloud_dialog_btn2=0x7f080011;
+        public static final int dcloud_dialog_icon=0x7f08000d;
+        public static final int dcloud_dialog_msg=0x7f08000f;
+        public static final int dcloud_dialog_rootview=0x7f08000c;
+        public static final int dcloud_dialog_title=0x7f08000e;
+        public static final int delete=0x7f08004d;
+        public static final int down_click_linearLayout=0x7f080028;
+        public static final int downlaod_progress_horizontal=0x7f080064;
+        public static final int download_app_name=0x7f080062;
+        public static final int download_app_version=0x7f080063;
+        public static final int download_icon=0x7f080007;
+        public static final int download_layout=0x7f08005e;
+        public static final int download_name=0x7f080008;
+        public static final int frmQueue=0x7f080016;
+        public static final int gridGallery=0x7f080014;
+        public static final int imgNoMedia=0x7f080015;
+        public static final int imgQueue=0x7f080017;
+        public static final int imgQueueMask=0x7f080018;
+        public static final int logs=0x7f08004e;
+        public static final int m_background=0x7f080019;
+        public static final int manage_app=0x7f08002a;
+        public static final int maybe=0x7f08002f;
+        public static final int maybe_list=0x7f080030;
+        public static final int next_time=0x7f08002c;
+        public static final int notification_background=0x7f080050;
+        public static final int notification_diffsize=0x7f08005b;
+        public static final int notification_fullsize=0x7f08005a;
+        public static final int notification_icon=0x7f080052;
+        public static final int notification_layout=0x7f080051;
+        public static final int notification_name=0x7f080054;
+        public static final int notification_right=0x7f080055;
+        public static final int notification_right_left=0x7f080056;
+        public static final int notification_right_top_left=0x7f080057;
+        public static final int notification_right_under_left=0x7f080059;
+        public static final int notification_title=0x7f080053;
+        public static final int notification_update_icon=0x7f08005c;
+        public static final int notification_update_text=0x7f08005d;
+        public static final int notification_version=0x7f080058;
+        public static final int other_operation=0x7f080029;
+        public static final int pager=0x7f080002;
+        public static final int progressBar=0x7f08006b;
+        public static final int query_page=0x7f08004c;
+        public static final int rec_install1=0x7f080033;
+        public static final int rec_install2=0x7f080039;
+        public static final int rec_install3=0x7f08003f;
+        public static final int rec_install4=0x7f080045;
+        public static final int recommend1=0x7f080036;
+        public static final int recommend2=0x7f08003c;
+        public static final int recommend3=0x7f080042;
+        public static final int recommend4=0x7f080048;
+        public static final int recommend_lin1=0x7f080031;
+        public static final int recommend_lin2=0x7f080037;
+        public static final int recommend_lin3=0x7f08003d;
+        public static final int recommend_lin4=0x7f080043;
+        public static final int recommend_logo1=0x7f080032;
+        public static final int recommend_logo2=0x7f080038;
+        public static final int recommend_logo3=0x7f08003e;
+        public static final int recommend_logo4=0x7f080044;
+        public static final int recommend_pro1=0x7f080034;
+        public static final int recommend_pro2=0x7f08003a;
+        public static final int recommend_pro3=0x7f080040;
+        public static final int recommend_pro4=0x7f080046;
+        public static final int set_priority=0x7f08004b;
+        public static final int setup_app_name=0x7f080066;
+        public static final int setup_app_version=0x7f080067;
+        public static final int setup_icon=0x7f080069;
+        public static final int setup_layout=0x7f080065;
+        public static final int setup_message=0x7f080068;
+        public static final int setup_text=0x7f08006a;
+        public static final int start_manage=0x7f08004a;
+        public static final int status=0x7f08005f;
+        public static final int status1=0x7f080035;
+        public static final int status2=0x7f08003b;
+        public static final int status3=0x7f080041;
+        public static final int status4=0x7f080047;
+        public static final int status_img=0x7f080060;
+        public static final int status_txt=0x7f080061;
+        public static final int tab0=0x7f080003;
+        public static final int tab1=0x7f080004;
+        public static final int tab2=0x7f080005;
+        public static final int tab3=0x7f080006;
+        public static final int text=0x7f08004f;
+        public static final int title=0x7f080000;
+        public static final int titleBtn=0x7f080013;
+        public static final int tvTitleText=0x7f080012;
+        public static final int update=0x7f080024;
+        public static final int update_msg=0x7f080025;
+        public static final int update_msg1=0x7f080026;
+        public static final int update_msg2=0x7f080027;
+        public static final int update_notification_progressbar=0x7f08000b;
+        public static final int update_notification_progressblock=0x7f08000a;
+        public static final int update_notification_progresstext=0x7f080009;
+        public static final int upload_status=0x7f080023;
+        public static final int wifi_download=0x7f08002b;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_main_market=0x7f030001;
-        public static final int app_download_notification=0x7f030002;
-        public static final int dcloud_dialog=0x7f030003;
-        public static final int fragment_main=0x7f030004;
-        public static final int image_pick_gallery=0x7f030005;
-        public static final int image_pick_gallery_item=0x7f030006;
-        public static final int increment_popup_dialog=0x7f030007;
-        public static final int main_test_activity=0x7f030008;
-        public static final int market_fragment_base=0x7f030009;
-        public static final int notification=0x7f03000a;
-        public static final int notification_inc=0x7f03000b;
-        public static final int snow_black_progress=0x7f03000c;
-        public static final int snow_white_progress=0x7f03000d;
-        public static final int stream_running_progress=0x7f03000e;
-        public static final int streamapp_list=0x7f03000f;
-        public static final int streamapp_list_item=0x7f030010;
-    }
-    public static final class menu {
-        public static final int main=0x7f090000;
+        public static final int activity_main_market=0x7f030000;
+        public static final int app_download_notification=0x7f030001;
+        public static final int dcloud_dialog=0x7f030002;
+        public static final int image_pick_gallery=0x7f030003;
+        public static final int image_pick_gallery_item=0x7f030004;
+        public static final int increment_popup_dialog=0x7f030005;
+        public static final int main_test_activity=0x7f030006;
+        public static final int market_fragment_base=0x7f030007;
+        public static final int notification=0x7f030008;
+        public static final int notification_inc=0x7f030009;
+        public static final int snow_black_progress=0x7f03000a;
+        public static final int snow_white_progress=0x7f03000b;
+        public static final int stream_running_progress=0x7f03000c;
+        public static final int streamapp_list=0x7f03000d;
+        public static final int streamapp_list_item=0x7f03000e;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
+        public static final int app_name=0x7f070000;
     }
     public static final class style {
-        public static final int ActionSheetStyleIOS6=0x7f07000a;
-        public static final int ActionSheetStyleIOS7=0x7f07000b;
-        /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
-         */
-        public static final int AppBaseTheme=0x7f070000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f070001;
+        public static final int ActionSheetStyleIOS6=0x7f050008;
+        public static final int ActionSheetStyleIOS7=0x7f050009;
         /**  <item name="android:windowIsTranslucent">true</item> 
          */
-        public static final int CustomTheme=0x7f070008;
-        public static final int DCloudTheme=0x7f070002;
-        public static final int DeviceDefault=0x7f070004;
-        public static final int DeviceDefault_Light=0x7f070003;
-        public static final int SplashTheme=0x7f070009;
-        public static final int TranslucentTheme=0x7f070005;
-        public static final int dcloud_anim_dialog_window_in_out=0x7f070006;
-        public static final int dcloud_defalut_dialog=0x7f070007;
-        public static final int featureLossDialog=0x7f07000c;
+        public static final int CustomTheme=0x7f050006;
+        public static final int DCloudTheme=0x7f050000;
+        public static final int DeviceDefault=0x7f050002;
+        public static final int DeviceDefault_Light=0x7f050001;
+        public static final int SplashTheme=0x7f050007;
+        public static final int TranslucentTheme=0x7f050003;
+        public static final int dcloud_anim_dialog_window_in_out=0x7f050004;
+        public static final int dcloud_defalut_dialog=0x7f050005;
+        public static final int featureLossDialog=0x7f05000a;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionSheet.
